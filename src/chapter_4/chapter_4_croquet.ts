@@ -29,8 +29,8 @@ export function playCroquet(): void {
   clear(true);
   print("The Queen of Hearts 👑❤ invites you to play croquet 🏑");
 
-  // 👉 FIXME ❌ Our ball and mallet are made of numbers.
-  const game: Croquet<number, number> = {
+  // 👉 FIXED
+  const game: Croquet<Ball, Mallet> = {
     hit: (ball, mallet) => {
       let score = 0;
 
